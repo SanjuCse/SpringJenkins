@@ -16,4 +16,9 @@ public class TestController {
 	private String test(@PathVariable String name, @PathVariable Integer age) {
 		return "Hello " + name + " - Age " + age;
 	}
+
+	@GetMapping("/greeting/{name}/{address}")
+	private String test(@PathVariable String name, @PathVariable String address) {
+		return "Hello " + name + " - Address " + address;
+	}
 }
