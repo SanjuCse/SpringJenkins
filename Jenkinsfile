@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/your/repository.git'
+                git 'https://github.com/SanjuCse/SpringJenkins.git'
             }
         }
         stage('Build') {
